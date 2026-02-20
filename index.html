@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <nav>
+      <div>
+        <img
+          src="./images/logo.png"
+          alt="Hotel logo"
+          class="logo"
+        />
+      </div>
+
+      <ul id="us">
+        <li><a href="signin.html" target="_blank">Sign in</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#reply">Leave a review</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <div id="hamburger">☰</div>
+    </nav>
+
+    <h1 class="hotel">Warm Bliss Hotel</h1>
+    <h2 class="hotel1">Feel the warmth, embrace the bliss.</h2>
+
+    <section class="intro">
+      <div class="set item1">
+        <img
+          src="./images/room-1.jpeg"
+          alt="Room with a nice view"
+        />
+      </div>
+
+      <div class="set item2">
+        <img
+          src="./images/bathroom-1.jpeg"
+          alt="A bathroom"
+        />
+      </div>
+
+      <div class="set item3">
+        <img
+          src="./images/room-2.jpeg"
+          alt="A bedroom"
+        />
+      </div>
+
+      <div class="set item4">
+        <img
+          src="./images/room-3.jpeg"
+          alt="A bedroom"
+        />
+      </div>
+
+      <div class="set item5">
+        <img
+          src="./images/diner.jpeg"
+          alt="A diner"
+        />
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        Welcome to Warm Bliss Hotel, your home away from home! Located at Lekki,
+        Nigeria. Our hotel blends elegance, comfort, and exceptional service to
+        create a memorable stay for every guest. We take pride in offering
+        Luxurious Accommodations of modern settings with air conditioning, a
+        flat-screen TV, a work desk and free Wi-Fi access all with a private
+        bathroom. You can also enjoy our recreational facilites such as our
+        swimming pool, fitness center, and spa treatments during your leisure
+        time. <br /><br />
+        Warm Bliss hotel is located one mile from the Lekki Conservation Centre,
+        a peaceful nature reserve offering a canopy walkway, wildlife, and a
+        break from the hustle and bustle of the city <br /><br />
+        So whether you're traveling for business or pleasure, our dedicated team
+        is here to provide personalized hospitality that meets your every need.
+        From the moment you step through our doors, you'll be immersed in an
+        atmosphere of warmth and refinement.
+      </p>
+      <button id="sign">Get started</button>
+    </section>
+
+    <div id="reply">
+      <h1>Rate Your Experience</h1>
+      <form id="review-form">
+        <label for="review">What did you think about your stay?</label>
+        <textarea
+          id="review"
+          name="review"
+          rows="5"
+          placeholder="Write your review here..."
+          required
+        ></textarea>
+
+        <div id="modal" class="modal hidden">
+          <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2>Thank You for your feedback!</h2>
+            <p>Your review has been submitted successfully.</p>
+            <button id="modal-button">OK</button>
+          </div>
+        </div>
+
+        <div class="stars">
+          <label>Rate Us:</label>
+          <div class="star-rating">
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label for="star1" title="1 star">★</label>
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label for="star2" title="2 stars">★</label>
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label for="star3" title="3 stars">★</label>
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label for="star4" title="4 stars">★</label>
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label for="star5" title="5 stars">★</label>
+          </div>
+        </div>
+
+        <button type="submit">Submit Review</button>
+      </form>
+    </div>
+
+    <footer id="contact">
+      <div class="navbar">
+        <div class="first">
+          <ul class="another">
+            <li class="bold">Warm Bliss hotel</li>
+            <li>
+              <img class="img" src="./images/icon-phone.svg" alt="" />
+              <span class="sans semi">Phone: 08027182930</span>
+            </li>
+            <li>
+              <img class="img" src="./images/icon-email.svg" alt="" />
+              <span class="sans">warmbliss@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="first">
+          <ul class="another">
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Jobs</a></li>
+            <li><a href="">Press</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="first">
+          <ul class="another">
+            <li><a href="">News</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="first">
+          <ul class="last">
+            <li>
+              <a href="https://www.facebook.com" target="_blank"
+                ><i class="bx bxl-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" target="_blank"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" target="_blank"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="copy">
+        <div class="final">Copyright &copy;2025 Warm Bliss Hotel</div>
+        <div class="top"><a href="/">Back to top</a></div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

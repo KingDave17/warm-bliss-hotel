@@ -1,0 +1,401 @@
+
+body {
+ 
+  padding: 0;
+  margin: 0;
+  background-color: rgb(247, 238, 238);
+}
+.intro {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+.item1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.set {
+  margin-left: 0.21rem;
+  margin-right: 0.21rem;
+  margin-top: 0.1rem;
+}
+
+.set img {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+nav {
+  width: 100%;
+  background-color: rgb(21, 7, 7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#us {
+  list-style-type: none;
+  display: flex;
+  width: 50%;
+}
+
+#us li a {
+  text-decoration: none;
+  color: white;
+  margin-right: 1.5rem;
+  font-size: 1.2rem;
+}
+#us li a:hover {
+  color: #f5e9d7;
+}
+.name {
+  color: white;
+}
+.nav img {
+  fill: white;
+}
+.logo {
+  width: 10%;
+}
+.hotel {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.hotel1 {
+  text-align: center;
+  font-style: italic;
+}
+#about {
+  margin-top: 8rem;
+  background-color: peachpuff;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+#about h2 {
+  font-size: 2rem;
+}
+#about p {
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+#sign {
+  padding: 0.5rem;
+  width: 20%;
+  background-color: rgb(80, 80, 80);
+  border: none;
+  color: white;
+  margin-bottom: 1rem;
+}
+#reply {
+  margin: 6rem 2rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+textarea {
+  width: 98%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  resize: vertical;
+}
+.star-rating {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 1.5rem;
+  color: #ccc;
+  cursor: pointer;
+}
+button {
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #555;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14rem;
+  background-color: rgb(233, 150, 122);
+  padding: 1rem;
+}
+.another,
+.last {
+  list-style-type: none;
+}
+.another li,
+.last li {
+  margin-bottom: 1.5rem;
+}
+.another li a {
+  text-decoration: none;
+  color: black;
+}
+.last {
+  display: flex;
+  margin-top: 6rem;
+}
+.bold {
+  font-weight: bold;
+}
+.last li a {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 0.4rem;
+  margin-right: 0.5rem;
+}
+footer {
+  background-color: rgb(233, 150, 122);
+  padding-bottom: 1rem;
+}
+hr {
+  margin: 0 3.5rem;
+  border: 1px solid rgb(165, 153, 153);
+  opacity: 2rem;
+}
+
+i {
+  color: black;
+}
+i:hover {
+  color: white;
+}
+#hamburger {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+.final {
+  margin-left: 3.7rem;
+}
+.copy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.top {
+  margin-right: 3.7rem;
+}
+.top a {
+  color: #333;
+  text-decoration: none;
+}
+.top a:hover {
+  text-decoration: underline;
+  color: #f5e9d7;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 25rem;
+}
+
+.modal-content h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.modal-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+.modal-content button {
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #45a049;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #999;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #333;
+}
+@media screen and (max-width: 768px) {
+  /* Body */
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(247, 238, 238);
+  }
+  .top {
+    margin-top: 1rem;
+    margin-left: 8rem;
+  }
+  #hamburger {
+    display: inline;
+    padding-right: 1rem;
+  }
+  nav {
+    width: 100%;
+    display: flex;
+  }
+
+  .logo {
+    width: 25%;
+  }
+
+  #us {
+    flex-direction: column;
+    display: none;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+  }
+  #us.active {
+    display: flex;
+    max-height: 500px;
+  }
+
+  #us li {
+    margin: 5px 0;
+  }
+
+  #us li a {
+    font-size: 1rem;
+    color: white;
+  }
+  .intro {
+    display: grid;
+    gap: 0.5rem;
+    padding: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .intro img {
+    width: 100%;
+  }
+  #about {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  #about h2 {
+    font-size: 1.5rem;
+  }
+
+  #about p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .sign {
+    width: 80%;
+    font-size: 1rem;
+    margin: 1rem auto;
+    display: block;
+  }
+  #reply {
+    margin: 2rem 1rem;
+  }
+
+  form {
+    gap: 1rem;
+  }
+
+  textarea {
+    width: 96%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: rgb(233, 150, 122);
+  }
+
+  .navbar {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .another,
+  .last {
+    text-align: center;
+    padding-top: -1rem;
+  }
+
+  .another li {
+    margin: 5px 0;
+  }
+  .last li {
+    margin-top: -3rem;
+  }
+
+  .last li a {
+    margin: 0.3rem;
+  }
+}
