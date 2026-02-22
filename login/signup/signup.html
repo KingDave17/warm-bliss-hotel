@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up | Warm Bliss Hotel</title>
+    <link rel="stylesheet" href="./signup.css" />
+  </head>
+  <body>
+    <div class="success-notification hidden">
+      <div class="notification-content">
+        <svg
+          class="checkmark-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          stroke-width="2.5"
+        >
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        <div class="notification-text">
+          <h3>Welcome Aboard!</h3>
+          <p>Your account has been created successfully. Redirecting...</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="background-image"></div>
+    <div class="container">
+      <div class="box">
+        <h2>Sign Up</h2>
+
+        <form id="up-form" novalidate>
+          <input type="text" id="full-name" placeholder="Full Name" />
+          <input type="email" id="email" placeholder="Email Address" />
+          <input type="password" id="password" placeholder="Password" />
+
+          <p id="error-summary" class="error-text hidden">
+            Please fill in all fields correctly.
+          </p>
+
+          <button class="sign" type="submit">Sign Up</button>
+        </form>
+
+        <p class="center">
+          Already have an account? <a href="../signin/signin.html">Sign In</a>
+        </p>
+      </div>
+    </div>
+    <script type="module" src="./signup.js"></script>
+  </body>
+</html>

@@ -4,26 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel Dashboard</title>
-    <link rel="stylesheet" href="./rough1.css">
+    <link rel="stylesheet" href="./dashboard.css">
   </head>
   <body>
+    <nav>
+      <div>
+        <img
+          src="../images/logo.png"
+          alt="Hotel logo"
+          class="logo"
+        />
+      </div>
+
+      <ul id="us">
+        
+        <li><a href="#room">Our rooms</a></li>
+        <li><a href="#attractions">Attractions</a></li>
+        <li><a href="../form/form.html">Register</a></li>
+        <li><a href="../index.html" target="_blank">Sign out</a></li>
+      </ul>
+      <div id="hamburger">☰</div>
+    </nav>
     <div class="hero">
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <h1 class="hero-title">Warm Bliss Hotel</h1>
         <p class="hero-subtitle">Experience Luxury, Comfort, and Warmth</p>
         <p class="hero-description">Your ultimate destination for relaxation and indulgence in the heart of Lekki</p>
-        <button class="hero-btn">Book Your Stay</button>
+        <button class="hero-btn ">Book Your Stay</button>
       </div>
     </div>
 
 
-    <div class="rooms">
+    <div class="rooms" id="room">
       <h2>Our Rooms</h2>
       <div class="card">
         <img
-          src="./images/bed-1.jpeg"
-          alt=""
+          src="../images/bed-1.jpeg"
+          alt="Deluxe Room with King-size bed and city view"
         />
         <div>
           <h3>Deluxe Room</h3>
@@ -36,7 +54,7 @@
       </div>
       <div class="card">
         <img
-          src="./images/executive-suite.jpg"
+          src="../images/executive-suite.jpg"
           alt="Executive Suite"
         />
         <div>
@@ -50,7 +68,7 @@
       </div>
       <div class="card">
         <img
-          src="./images/family-suite.jpg"
+          src="../images/family-suite.jpg"
           alt="Family Suite"
         />
         <div>
@@ -70,40 +88,40 @@
 
     
 
-    <div class="container">
+    <div class="container" id="attractions">
         <div class="item">
           <img
-            src="./images/pexels-olly-3673941.jpg"
-            alt="Australian Capital Territory"
+            src="../images/pexels-olly-3673941.jpg"
+            alt="Hotel Spa with relaxation facilities"
           />
           <div class="label">Spa</div>
         </div>
         <div class="item">
-          <img src="./images/pexels-naimbic-2290738.jpg" alt="New South Wales" />
+          <img src="../images/pexels-naimbic-2290738.jpg" alt="Hotel Swimming Pool" />
           <div class="label">Pool</div>
         </div>
         <div class="item">
-          <img src="./images/pexels-anthony-rahayel-125801377-19689233.jpg" alt="Northern Territory" />
+          <img src="../images/pexels-anthony-rahayel-125801377-19689233.jpg" alt="Hotel Bar with beverages and seating" />
           <div class="label">Bar</div>
         </div>
         <div class="item">
-          <img src="./images/pexels-naimbic-2290753.jpg" alt="Queensland" />
+          <img src="../images/pexels-naimbic-2290753.jpg" alt="Hotel On-site Restaurant with dining area" />
           <div class="label">On-site restaurant</div>
         </div>
         <div class="item">
-          <img src="./images/pexels-thought-catalog-317580-2228559.jpg" alt="South Australia" />
+          <img src="../images/pexels-thought-catalog-317580-2228559.jpg" alt="Hotel Cafe with coffee and snacks" />
           <div class="label">Cafe</div>
         </div>
         <div class="item">
-          <img src="./images/pexels-kubrakuzu-17538473.jpg" alt="Tasmania" />
+          <img src="../images/pexels-kubrakuzu-17538473.jpg" alt="Hotel Sports and Games center" />
           <div class="label">Sports and Games center</div>
         </div>
         <div class="item">
-          <img src="./images/pexels-anastasia-shuraeva-4944954.jpg" alt="Victoria" />
+          <img src="../images/pexels-anastasia-shuraeva-4944954.jpg" alt="Hotel Gym with exercise equipment" />
           <div class="label">Gym</div>
         </div>
         <div class="item">
-          <img src="./images/pexels-jerome031-2114365.jpg" alt="Western Australia" />
+          <img src="../images/pexels-jerome031-2114365.jpg" alt="Hotel Night Club with entertainment" />
           <div class="label">Night Club</div>
         </div>
       </div>
@@ -114,6 +132,6 @@
      
     </div>
 
-    <script src="./rough1.js"></script>
+    <script type="module" src="./dashboard.js"></script>
   </body>
 </html>

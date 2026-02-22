@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,13 +10,14 @@
     <div class="container">
       <div id="reservation-modal" class="modal hidden">
         <div class="modal-content">
+          <div>
+            <h2>✓ Registration Submitted!</h2>
+            <p>
+              Your registration has been successfully submitted. Redirecting to
+              payment...
+            </p>
+          </div>
           <span id="close-modal" class="close">&times;</span>
-          <h2>Registration Submitted!</h2>
-          <p>
-            Your regestration has been successfully submitted. We will contact
-            you shortly.
-          </p>
-          <button id="modal-button">OK</button>
         </div>
       </div>
 
@@ -51,9 +52,9 @@
           <div class="group">
             <label for="ServiceType">Room Type</label>
             <select name="service" id="del">
-              <option value="">Deluxe Room</option>
-              <option value="">Executive Suite</option>
-              <option value="">Family Suite</option>
+              <option value="deluxe">Deluxe Room</option>
+              <option value="executive">Executive Suite</option>
+              <option value="family">Family Suite</option>
             </select>
           </div>
           <div class="group">
@@ -80,6 +81,6 @@
         </div>
       </form>
     </div>
-    <script src="./form.js"></script>
+    <script type="module" src="./form.js"></script>
   </body>
 </html>

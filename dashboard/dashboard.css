@@ -1,11 +1,61 @@
-body{
+body {
+  padding: 0;
+  margin: 0;
   background-color: rgb(247, 238, 238);
+  padding-top: 72px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 150px;
+}
+
+nav {
+  width: 100%;
+  background-color: rgb(21, 7, 7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.logo {
+  width: 10%;
+}
+
+#us {
+  list-style-type: none;
+  display: flex;
+  width: 50%;
+}
+
+#us li a {
+  text-decoration: none;
+  color: white;
+  margin-right: 1.5rem;
+  font-size: 1.2rem;
+}
+
+#us li a:hover {
+  color: #f5e9d7;
+}
+
+.nav img {
+  fill: white;
+}
+
 .hero {
   position: relative;
   width: 100%;
   height: 500px;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./images/hall.jpg") center/cover no-repeat;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/hall.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +70,11 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(212, 165, 116, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(212, 165, 116, 0.3) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
   z-index: 1;
 }
 
@@ -61,7 +115,10 @@ body{
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
   box-shadow: 0 4px 15px rgba(212, 165, 116, 0.4);
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -74,49 +131,167 @@ body{
   background: linear-gradient(135deg, #c9915d 0%, #b87f4f 100%);
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.dashboard-container {
+  max-width: 50rem;
+  margin: 1.3rem auto;
+  padding: 1.3rem;
+  background: white;
+  border-radius: 0.6rem;
+  box-shadow: 0px 0.3rem 1.3rem rgba(0, 0, 0, 0.3);
 }
 
-@media screen and (max-width: 768px) {
-  .hero {
-    height: 350px;
-  }
-
-  .hero-title {
-    font-size: 2.2rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.3rem;
-  }
-
-  .hero-description {
-    font-size: 1rem;
-  }
-
-  .hero-btn {
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
-  }
+.welcome-section,
+.booking-section,
+.services-section,
+.rooms-section,
+.offers-section,
+.contact-section {
+  padding: 1.3rem;
+  margin-bottom: 1.3rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
+
+.rooms {
+  margin-top: 7rem;
+}
+
+.card {
+  width: 95%;
+  display: flex;
+  gap: 1rem;
+  background: #f9f9f9;
+  padding: 0.9rem;
+  margin: 0.8rem auto;
+  border-radius: 0.6rem;
+  box-shadow: 0px 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0.8rem 1.5rem rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+  width: 30%;
+  border-radius: 0.3rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+  padding: 1.3rem;
+}
+
+.item {
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+    filter 0.4s ease,
+    box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  filter: brightness(1.15);
+  box-shadow: 0px 0.6rem 1rem rgba(0, 0, 0, 0.35);
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.label {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.reservations-section {
+  text-align: center;
+  margin-top: 1.3rem;
+}
+
+#reservation-button {
+  width: 30%;
+  padding: 0.6rem 1.3rem;
+  font-size: 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+#reservation-button:hover {
+  background-color: #555;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 0.9rem;
+  margin: 1.3rem;
+}
+
+.avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-right: 0.9rem;
+}
+
+#update-details {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.9rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+#update-details:hover {
+  background-color: #45a049;
+}
+
 .hamburger-menu {
   position: relative;
   padding: 0.6rem;
   background-color: #333;
   color: white;
 }
+
 .hamburger {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
 #menu {
   position: absolute;
   top: 2.5rem;
@@ -145,173 +320,85 @@ body{
   font-size: 0.9rem;
 }
 
-.welcome {
-  width: 100%;
-}
-.welcome h1 {
-  text-align: center;
-}
-.welcome p {
-  text-align: center;
-}
-.rooms h2 {
-  text-align: center;
-}
-.card {
-  width: 95%;
-  display: flex;
-  gap: 1rem;
-  background: #f9f9f9;
-  padding: 0.9rem;
-  margin: 0.8rem auto;
-  border-radius: 0.6rem;
-  box-shadow: 0px 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
-  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
-  cursor: pointer;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 0.8rem 1.5rem rgba(0, 0, 0, 0.25);
-}
-.card img {
-  width: 30%;
-  border-radius: 0.3rem;
-}
-.head h2 {
-  margin-left: 1.3rem;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.6rem;
-  padding: 1.3rem;
-}
-
-.item {
-  position: relative;
-  text-align: center;
-  color: white;
-  overflow: hidden;
-  border-radius: 0.5rem;
-  box-shadow: 0px 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
-  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.4s ease, box-shadow 0.4s ease;
-  cursor: pointer;
-}
-
-.item:hover {
-  transform: scale(1.1);
-  filter: brightness(1.15);
-  box-shadow: 0px 0.6rem 1rem rgba(0, 0, 0, 0.35);
-}
-
-.item img {
-  width: 100%;
-  height: 100%;
-  border-radius: 0.5rem;
-}
-
-.label {
-  position: absolute;
-  bottom: 0.6rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 0.3rem 0.6rem;
-  border-radius: 0.3rem;
-  font-size: 0.9rem;
-}
-.reservations-section {
-  text-align: center;
-  margin-top: 1.3rem;
-}
-
-#reservation-button {
-  width: 30%;
-  padding: 0.6rem 1.3rem;
-  font-size: 1rem;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 0.3rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-  margin-bottom: 1rem;
-}
-
-.user-profile {
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
-  border-radius: 0.5rem;
-  box-shadow: 0px 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
-  padding: 0.9rem;
-  margin: 1.3rem;
-}
-
-.avatar {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  margin-right: 0.9rem;
-}
-
-.profile-details h2 {
-  color: #333;
-  margin: 0;
-}
-
-#update-details {
-  padding: 0.3rem 0.6rem;
-  font-size: 0.9rem;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 0.3rem;
-  cursor: pointer;
-}
-
-#update-details:hover {
-  background-color: #45a049;
-}
-
-.dashboard-container {
-  max-width: 50rem;
-  margin: 1.3rem auto;
-  padding: 1.3rem;
-  background: white;
-  border-radius: 0.6rem;
-  box-shadow: 0px 0.3rem 1.3rem rgba(0, 0, 0, 0.3);
-}
-
-.welcome-section,
-.booking-section,
-.services-section,
-.rooms-section,
-.offers-section,
-.contact-section {
-  padding: 1.3rem;
-  margin-bottom: 1.3rem;
-  background-color: #ffffff;
-  border-radius: 0.5rem;
-  box-shadow: 0px 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
 h1,
 h2 {
   color: #333;
+  text-align: center;
 }
-
 p {
   color: #666;
+  text-align: center;
 }
-@media (max-width: 768px) {
+
+.rooms h2 {
+  font-size: 2rem;
+  margin: 1.6rem 0 0.6rem;
+  letter-spacing: 0.6px;
+  font-weight: 700;
+  position: relative;
+}
+
+.rooms h2::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 6px;
+  background: linear-gradient(90deg, #d4a574, #c9915d);
+  margin: 8px auto 0;
+  border-radius: 3px;
+}
+
+.head h2 {
+  font-size: 1.25rem;
+  color: #3a3a3a;
+  margin: 3.2rem 0 0.6rem 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.head h2::before {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 4px;
+  background: #c9915d;
+  margin: 0 auto 10px;
+  border-radius: 3px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 350px;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+  .hero-description {
+    font-size: 1rem;
+  }
+  .hero-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+
   .card {
     flex-direction: column;
     width: 90%;
-    height: 30%;
+    height: auto;
   }
   .card img {
     width: 100%;
@@ -320,11 +407,9 @@ p {
   .welcome h1 {
     font-size: 1.8rem;
   }
-
   .welcome p {
     font-size: 1rem;
   }
-
   .rooms h2 {
     font-size: 1.6rem;
   }
@@ -332,6 +417,7 @@ p {
   #reservation-button {
     font-size: 0.9rem;
     padding: 0.6rem 1.2rem;
+    width: 80%;
   }
 }
 
@@ -339,25 +425,10 @@ p {
   body {
     font-size: 0.9rem;
   }
-
   .hamburger-menu {
     padding: 0.8rem;
   }
-
   .hamburger {
     font-size: 1.8rem;
-  }
-
-  #menu a {
-    font-size: 0.9rem;
-  }
-
-  .card h3,
-  .card p {
-    font-size: 0.9rem;
-  }
-
-  .label {
-    font-size: 0.8rem;
   }
 }

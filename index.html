@@ -3,25 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing page</title>
+    <title>Landing page | Warm Bliss Hotel</title>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./landing/index.css" />
   </head>
   <body>
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <div class="success-icon"><i class="bx bxs-check-circle"></i></div>
+        <div class="message-body">
+          <h2>Review Submitted!</h2>
+          <p>
+            Thank you for sharing your experience at
+            <strong>Warm Bliss Hotel</strong>. Your feedback helps us maintain
+            our luxury standards.
+          </p>
+        </div>
+        <button id="modal-button">Back to Home</button>
+        <span id="close-modal" class="close">&times;</span>
+      </div>
+    </div>
+
     <nav>
       <div>
-        <img
-          src="./images/logo.png"
-          alt="Hotel logo"
-          class="logo"
-        />
+        <img src="./images/logo.png" alt="Hotel logo" class="logo" />
       </div>
 
       <ul id="us">
-        <li><a href="signin.html" target="_blank">Sign in</a></li>
+        <li>
+          <a href="./login/signin/signin.html" target="_blank">Sign in</a>
+        </li>
         <li><a href="#about">About us</a></li>
         <li><a href="#reply">Leave a review</a></li>
         <li><a href="#contact">Contact Us</a></li>
@@ -34,38 +48,23 @@
 
     <section class="intro">
       <div class="set item1">
-        <img
-          src="./images/room-1.jpeg"
-          alt="Room with a nice view"
-        />
+        <img src="./images/room-1.jpeg" alt="Room with a nice view" />
       </div>
 
       <div class="set item2">
-        <img
-          src="./images/bathroom-1.jpeg"
-          alt="A bathroom"
-        />
+        <img src="./images/bathroom-1.jpeg" alt="A bathroom" />
       </div>
 
       <div class="set item3">
-        <img
-          src="./images/room-2.jpeg"
-          alt="A bedroom"
-        />
+        <img src="./images/room-2.jpeg" alt="A bedroom" />
       </div>
 
       <div class="set item4">
-        <img
-          src="./images/room-3.jpeg"
-          alt="A bedroom"
-        />
+        <img src="./images/room-3.jpeg" alt="A bedroom" />
       </div>
 
       <div class="set item5">
-        <img
-          src="./images/diner.jpeg"
-          alt="A diner"
-        />
+        <img src="./images/diner.jpeg" alt="A diner" />
       </div>
     </section>
 
@@ -93,24 +92,17 @@
 
     <div id="reply">
       <h1>Rate Your Experience</h1>
-      <form id="review-form">
+      <form id="review-form" novalidate>
         <label for="review">What did you think about your stay?</label>
         <textarea
           id="review"
           name="review"
           rows="5"
           placeholder="Write your review here..."
-          required
         ></textarea>
-
-        <div id="modal" class="modal hidden">
-          <div class="modal-content">
-            <span id="close-modal" class="close">&times;</span>
-            <h2>Thank You for your feedback!</h2>
-            <p>Your review has been submitted successfully.</p>
-            <button id="modal-button">OK</button>
-          </div>
-        </div>
+        <p id="review-error" class="error-text hidden">
+          A response is required for your review to be submitted.
+        </p>
 
         <div class="stars">
           <label>Rate Us:</label>
@@ -126,6 +118,9 @@
             <input type="radio" id="star5" name="rating" value="5" />
             <label for="star5" title="5 stars">★</label>
           </div>
+          <p id="star-error" class="error-text hidden">
+            Please choose a star rating.
+          </p>
         </div>
 
         <button type="submit">Submit Review</button>
@@ -138,11 +133,11 @@
           <ul class="another">
             <li class="bold">Warm Bliss hotel</li>
             <li>
-              <img class="img" src="./images/icon-phone.svg" alt="" />
-              <span class="sans semi">Phone: 08027182930</span>
+              <img class="imge" src="./images/icon-phone.svg" alt="" />
+              <span class="sans">Phone: 08027182930</span>
             </li>
             <li>
-              <img class="img" src="./images/icon-email.svg" alt="" />
+              <img class="imge" src="./images/icon-email.svg" alt="" />
               <span class="sans">warmbliss@gmail.com</span>
             </li>
           </ul>
@@ -192,6 +187,6 @@
         <div class="top"><a href="/">Back to top</a></div>
       </div>
     </footer>
-    <script src="./index.js"></script>
+    <script type="module" src="./landing/index.js"></script>
   </body>
 </html>
