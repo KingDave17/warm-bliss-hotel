@@ -29,6 +29,7 @@ The application features a complete user journey; from a landing page to custom 
 * **Modular Codebase:** Ensured JavaScript code was structured into exported, testable functions for modern ES6 module compatibility.
 
 ## 🗂️ Project Structure
+```text
 hotel_management_system/
 ├── dashboard/          # Room displays & user dashboard
 ├── form/               # Detailed reservation & service forms
