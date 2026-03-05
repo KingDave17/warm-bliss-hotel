@@ -1,5 +1,11 @@
 # 🏨 Warm Bliss Hotel - Full-Stack Web Prototype
 
+> **Welcome!** If you're visiting from my LinkedIn post, thank you for stopping by. This project is a deep dive into building a secure, test-driven hotel management prototype using pure Vanilla JavaScript.
+
+### 🚀 Quick Links
+* **[Live Demo](https://kingdave17.github.io/warm-bliss-hotel/)**: Explore the luxury hotel interface.
+* **[Jasmine Test Suite](./tests/)**: See the 100% pass rate for core authentication and payment logic.
+
 ## 📖 Project Overview
 Warm Bliss Hotel is a responsive, multi-page web application that simulates a complete hotel booking experience. I built this project to demonstrate a deep understanding of Vanilla JavaScript, DOM manipulation, and modern CSS architecture. 
 
