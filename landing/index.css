@@ -376,6 +376,12 @@ i:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  #sign {
+    width: 60%;
+    padding: 0.7rem;
+    font-size: 1.1rem;
+  }
+
   .navbar {
     gap: 1rem;
     padding: 1rem;
